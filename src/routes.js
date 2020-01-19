@@ -14,9 +14,4 @@ routes.post('/devs', DevController.store);
 
 routes.get('/search', SearchController.index);
 
-routes.delete('/devs/:id', (request, response) => {
-    console.log(request.params);
-    return response.json({message: 'Hello'});
-});
-
 module.exports = routes;
